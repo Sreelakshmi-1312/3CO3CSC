@@ -5,26 +5,31 @@
  <title> NATURE PHOTOGRAPHY</title>
   </head>
   <body>
-      <div class="container">
-  <img src="nature.jpg.jpg" alt="Norway" style="width:200%;" style="border:3px solid">
-            <div class="text-block">
- <h1 style="text-align:left;font-family:Wendy one;font-size:30 px;font-weight:bolder;color:green;">NATURE POINT</h1>
-      </div>
-/* Container holding the image and the text */
-     container {. 
-     position: relative;
-     }
+  <style>
+    .box{
+        position: relative;
+        display: inline-block; /* Make the width of box same as image */
+    }
+    .box .text{
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        top: 40%; /* Adjust this value to move the positioned div up and down */
+        text-align: center;
+        width: 60%; /* Set the width of the positioned div */
+    }
+</style>
+</head> 
+<body>
+    <div class="box">
+        <img src="nature.jpg.jpg" alt="nature">
+        <div class="text">
+            <h1>NATURE POINT</h1>
+        </div>
+    </div>    
 
-/* Bottom right text */
-    .text-block {
-     position: absolute;
-    bottom: 20px;
-     right: 20px;
-     background-color: black;
-     color: white;
-     padding-left: 20px;
-     padding-right: 20px;
-}
  <p> GLIMPSES OF NATURE </p>
   </body>
 </html>
