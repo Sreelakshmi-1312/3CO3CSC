@@ -5,32 +5,36 @@
   </head>
   <body>
   <style>
-    .box{
-        position: relative;
-        display: inline-block; 
-    }
-    .box .text{
-        position: absolute;
-        z-index: 999;
-        margin: 0 auto;
-        left: 0;
-        right: 0;
-        top: 20%; 
-        text-align:center;
-        width: 100%;
-    }
+.container {
+  position: relative;
+  font-family: Arial;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 </style>
-</head> 
+</head>
 <body>
-    <div class="box">
-        <img  style="text-align:left;border:2px solid;max-width:1210px;height:auto;"src="wild.jpg" >
-        <div class="text">
-            <h2 style="text-align:right;font-family:Verdana;font-size:95px;font-weight:bolder;color:WHITE;padding-left:5px;"> 
+
+
+
+<div class="container">
+  <img src="wide.jpg" alt="Nature" style="width:100%;">
+  <div class="text-block">
+         <h2 style="text-align:right;font-family:Verdana;font-size:95px;font-weight:bolder;color:WHITE;padding-left:5px;"> 
             <u style="border-bottom:20px solid white">NATURE</u> &nbsp&nbsp&nbsp <br />
              <u style="border-bottom:20px solid white;position: relative;top:35px;"> POINT</u> &nbsp&nbsp&nbsp&nbsp<br /><h3 style="position: relative;bottom:15px;text-align:right;font-size:30px;
             font-variant:small-caps;padding-bottom:100px;color:white;background-color:black;">Glimpses of nature&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp </h3></h2>   
-        </div>
-    </div>    
+ 
+  </div>
+</div>
   </body>
 </html>
 
